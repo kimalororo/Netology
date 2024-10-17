@@ -1,10 +1,15 @@
-import { posts } from './postMock.js';
-
 setTimeout(() => {
     document.querySelector('#spinner').style.display = 'none';
     const postsContainer = document.querySelector('.posts-container');
     const realPosts = posts.slice(0, 4);
-
+    const isAuthenticated = false;
+    
+    if (!isAuthenticated) {
+        const authButtonContainer = document.getElementById('auth-button-container');
+        authButtonContainer.innerHTML = `
+            <a href="login.html" class="btn btn-primary">Авторизация</a>
+        `;
+    }
     realPosts.forEach(post => {
         const postElement = document.createElement('div');
         postElement.className = 'col-md-4 mb-4';

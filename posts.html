@@ -11,15 +11,18 @@
     <div class="container my-4">
         <h1 class="text-center">Список постов</h1>
 
+        <div id="auth-button-container" class="text-center my-4"></div>   
         <div id="spinner" class="text-center">
             <div class="spinner-border" role="status">
                 <span class="visually-hidden">Загрузка...</span>
             </div>
         </div>
-
+        
         <div class="row posts-container" id="posts-container"></div>
     </div>
-
-    <script type="module" src="postsScript.js" defer></script>
+    <script src="Scripts/postMock.js"></script>
+    <script src="Scripts/userMock.js"></script>
+    <script src="Scripts/logScript.js"></script>
+    <script src="Scripts/postsScript.js"></script>
 </body>
 </html>

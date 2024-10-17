@@ -1,6 +1,3 @@
-import { posts } from './postMock.js'; 
-import { users } from './userMock.js';
-
 const postId = Number(new URLSearchParams(window.location.search).get('id')); 
 const postContainer = document.getElementById('post-container');
 
